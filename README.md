@@ -3,23 +3,16 @@
 <!-- _[Ссылка на приложение](http://178.128.136.91/ "Приложение")_  
 _github подставляет `s` в `http`, она там не нужна_   -->
 
-<!-- <p>
+<p>
   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"><img src="readme/icon-js.svg" alt="JS"></a>
     <img src="readme/icon-whitespace-5px.svg"/>
   <a href="https://www.typescriptlang.org/"><img src="readme/icon-ts.svg" alt="TS"></a>
     <img src="readme/icon-whitespace-5px.svg"/>
-  <a href="https://npmjs.com/"><img src="readme/icon-npm.svg" alt="NPM"></a>
+  <a href="https://ru.reactjs.org/"><img src="readme/icon-react.svg" alt="React"></a>
     <img src="readme/icon-whitespace-5px.svg"/>
   <a href="https://webpack.js.org/"><img src="readme/icon-webpack.svg" alt="WebPack"></a>
     <img src="readme/icon-whitespace-5px.svg"/>
-  <a href="https://nodejs.org/ru/docs/"><img src="readme/icon-node.svg" alt="NodeJS"></a>
-    <img src="readme/icon-whitespace-5px.svg"/>
-  <a href="https://expressjs.com/ru/"><img src="readme/icon-express.svg" alt="ExpressJS"></a>
-    <img src="readme/icon-whitespace-5px.svg"/>
-  <a href="https://habr.com/ru/post/564390/"><img src="readme/icon-sql.svg" alt="SQL"></a>
-    <img src="readme/icon-whitespace-5px.svg"/>
-  <a href="https://www.postgresql.org/"><img src="readme/icon-pg.svg" alt="PostgreSQL"></a>
-</p> -->
+</p>
 
 ## Задание
 
@@ -29,7 +22,7 @@ _github подставляет `s` в `http`, она там не нужна_   -
 3) Сделать фильтрацию персонажей по имени, статусу, полу.
 4) Сделать роуминг сайта и по отдельному роуту создать страницу о себе, куда можно написать все, чем желаете поделиться.
 
-Желательно писать на React+Typescript, можно использовать любые UI-библиотеки (Ant-Design, Material UI).  
+Желательно писать на `React` + `Typescript`, можно использовать любые UI-библиотеки (`Ant-Design`, `Material UI`).  
 Декоративное оформление сайта на свое усмотрение. _[Пример](https://yadi.sk/d/-CJ_DVOZBd5UtA)_  
 
 ## Функциональность получившегося приложения
@@ -66,4 +59,3 @@ _github подставляет `s` в `http`, она там не нужна_   -
     <img src="readme/icon-whitespace-5px.svg"/>
   <a href="https://www.instagram.com/evg._.su/"><img src="readme/icon-inst.svg" alt="Instagram"></a>
 </p>
-
