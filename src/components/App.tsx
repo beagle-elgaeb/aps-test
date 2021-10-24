@@ -1,72 +1,51 @@
-import { useEffect, useState } from "react";
-import styled from "styled-components";
-import * as api from "../utils/Api";
-import { CharacterData, Info } from "../utils/types"
+import { NavLink, Route } from "react-router-dom";
+import styled from "styled-components/macro";
+import Persons from "./Persons";
 
 function App() {
-  const [persons, setPersons] = useState<CharacterData[]>([]);
-  const [info, setInfo] = useState<Info>();
-
-  useEffect(() => {
-    async function loadCharacters() {
-      const characters = await api.getCharacters();
-
-      if (!characters) {
-        return;
-      }
-
-      setPersons(characters.results);
-      setInfo(characters.info);
-    }
-
-    loadCharacters();
-  }, []);
-
-  console.log(info);
-  
   return (
-    <Body>
+    <>
       <Header className="App-header">
         <Title>Characters "Rick and Morty" for APSolutions</Title>
-        <div>
-          <Link>About caracters</Link>
-          <Link>About me</Link>
-        </div>
+        <nav>
+          <MenuItem exact to="/" activeClassName="link_active">About caracters</MenuItem >
+          <MenuItem to="/about-me" activeClassName="link_active">About me</MenuItem >
+        </nav>
       </Header>
       <Main>
-        <Persons>
-          {persons.map((person, i) => (
-            <Person key={i}>
-              <Image src={person.image} alt={person.name} />
-              <Name>{person.name}</Name>
-              <Text>Разновидность: {person.species}</Text>
-              <Text>Местоположение: {person.location.name}</Text>
-              <Text>Номера эпизодов: -запросить-</Text>
-            </Person>
-          ))}
-        </Persons>
-        <Buttons>
-          ...<Number></Number> <Number></Number> <Number></Number>...
-        </Buttons>
+        <Route exact path="/:page">
+          <Persons />
+        </Route>
+        <Route exact path="/">
+          <Persons />
+        </Route>
+        <Route path="/about-me">
+          <Person>
+            <Image src="https://avatars.githubusercontent.com/u/81292823?v=4" alt="Евгения Никонова" />
+            <Name>Евгения</Name>
+            <Text>Я сейчас заканчиваю обучение на курсе веб-разработки в Яндекс.Практикум.</Text>
+            <Text>Работаю инженером-конструктором на опытном производстве.</Text>
+            <Text>Люблю тестовые задания.</Text>
+            <Text>Не люблю длинные собеседования.</Text>
+            <Text>Мой GitHub: </Text>https://github.com/beagle-elgaeb
+            <Text>Моё резюме: </Text>https://hh.ru/resume/4afe5798ff093bebf90039ed1f667632626873
+          </Person>
+        </Route>
       </Main>
       <Footer>
-        <Copiright href="https://github.com/beagle-elgaeb">2021 (c) Никонова Евгения</Copiright>
+        <Copiright href="https://github.com/beagle-elgaeb">2021 ©Никонова Евгения</Copiright>
       </Footer>
-    </Body>
+    </>
   )
 }
 
 export default App;
 
-const Body = styled.div`
-  background: black;
-`;
-
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 1px 20px 1px yellowgreen;
-  padding: 0 20px 0 20px;
+  box-shadow: 0 3px 20px 1px yellowgreen;
+  padding: 0 50px 0 50px;
 
   @media (max-width: 750px) {
     flex-direction: column;
@@ -80,14 +59,35 @@ const Title = styled.h1`
   font-weight: 600;
   color: yellowgreen;
   margin: 0;
+
+  @media (max-width: 550px) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px 0 15px 0;
+  }
 `;
 
-const Link = styled.a`
+const MenuItem = styled(NavLink)`
   font-size: 20px;
   line-height: 60px;
   font-weight: 600;
+  text-decoration: none;
   color: yellow;
-  margin: 0 0 0 30px;
+  margin: 0;
+
+  @media (max-width: 550px) {
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  &.link_active {
+    display: none;
+  }
+
+  :hover {
+    text-shadow: 0 0 8px, 0 0 8px, 0 0 8px;
+  }
 `;
 
 const Main = styled.main`
@@ -97,31 +97,13 @@ const Main = styled.main`
   margin: 50px auto 50px auto;
 `;
 
-const Persons = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  margin: 50px 0 19px 0;
-
-  @media (max-width: 1020px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 750px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 520px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
 const Person = styled.div`
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 0, 0.15);
   border-radius: 20px;
   box-shadow: 0 0 5px 2px yellowgreen;
+  padding: 0 0 10px 0;
 `;
 
 const Image = styled.img`
@@ -135,32 +117,22 @@ const Name = styled.p`
   line-height: 18px;
   font-weight: 600;
   color: yellowgreen;
-  margin: 0 0 20px 0;
+  margin: 20px auto 20px auto;
 `;
 
 const Text = styled.p`
   font-size: 14px;
   line-height: 16px;
   color: yellowgreen;
-  margin: 0 0 10px 0;
+  margin: 0 10px 10px 10px;
   
   ::last-child {
     margin: 0;
   }
 `;
 
-const Buttons = styled.div`
-  display: flex;
-`;
-
-const Number = styled.button`
-  background: transparent;
-  border: none;
-  outline: none;
-`;
-
 const Footer = styled.footer`
-  box-shadow: 0 1px 20px 1px yellowgreen;
+  box-shadow: 0 -3px 20px 1px yellowgreen;
 `;
 
 const Copiright = styled.a`

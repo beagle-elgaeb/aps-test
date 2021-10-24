@@ -22,6 +22,6 @@ export type CharacterData = {
 export type Info = {
   "count": number,
   "pages": number,
-  "next": string,
-  "prev": string
+  "next": string | undefined,
+  "prev": string | undefined
 };
