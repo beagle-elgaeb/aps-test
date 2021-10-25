@@ -13,11 +13,13 @@ function Persons() {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    let cancel = false;
+
     async function loadCharacters() {
       try {
         const characters = await api.getCharacters(page, name, status, gender);
 
-        if (!characters) {
+        if (!characters || cancel) {
           return;
         }
 
@@ -31,6 +33,8 @@ function Persons() {
     }
 
     loadCharacters();
+
+    return () => { cancel = true }
   }, [page, name, status, gender]);
 
   function handleNextPage() {
@@ -62,7 +66,7 @@ function Persons() {
     <>
       <SearchInputs>
         <NameInput placeholder="Name" type="text" name="Name" onChange={handleName} error={error} />
-        <SearchSelect  onChange={handleStatus}>
+        <SearchSelect onChange={handleStatus}>
           <option value="">Status</option>
           <option value="Alive">Alive</option>
           <option value="Dead">Dead</option>

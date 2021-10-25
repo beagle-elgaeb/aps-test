@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "homepage": "https://beagle-elgaeb.github.io/",
+  "name": "aps-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "cross-env PUBLIC_URL=/aps-test yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,8 @@
     "@types/react": "^17.0.31",
     "@types/react-router-dom": "^5.3.1",
     "@types/styled-components": "^5.1.15",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^3.2.3",
     "typescript-plugin-styled-components": "^2.0.0"
   }
 }

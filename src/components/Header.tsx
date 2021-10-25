@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 
 function Header() {
   return (
-    <HeaderContainer className="App-header">
+    <HeaderContainer>
       <Title>Characters "Rick and Morty" for APSolutions</Title>
       <nav>
         <MenuItem exact to="/" activeClassName="link_active">About caracters</MenuItem >
