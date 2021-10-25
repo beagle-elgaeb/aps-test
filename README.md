@@ -12,6 +12,7 @@ _github подставляет `s` в `http`, она там не нужна_   -
     <img src="readme/icon-whitespace-5px.svg"/>
   <a href="https://webpack.js.org/"><img src="readme/icon-webpack.svg" alt="WebPack"></a>
     <img src="readme/icon-whitespace-5px.svg"/>
+  <a href="https://styled-components.com/"><img src="readme/icon-styled-components.svg" alt="Styled-components"></a>
 </p>
 
 ## Задание
@@ -27,11 +28,10 @@ _github подставляет `s` в `http`, она там не нужна_   -
 
 ## Функциональность получившегося приложения
 
-- будет позже
-
-## Возможные улучшения
-
-- пока нечего
+Соответствует заданию. И:  
+- проработан UX (hover'ы, подсветка некорректных данных в input'е);
+- страница адаптируется от 320px;
+- страница размещена на GitHub Pages.
 
 ## Директории
 
