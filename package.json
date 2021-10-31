@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "cross-env PUBLIC_URL=/aps-test yarn build",
+    "predeploy": "cross-env PUBLIC_URL=/test-aps yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
