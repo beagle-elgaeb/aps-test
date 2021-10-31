@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/aps-test/static/css/main.e2669ef5.chunk.css",
-    "main.js": "/aps-test/static/js/main.5789d679.chunk.js",
-    "main.js.map": "/aps-test/static/js/main.5789d679.chunk.js.map",
-    "runtime-main.js": "/aps-test/static/js/runtime-main.74cac97d.js",
-    "runtime-main.js.map": "/aps-test/static/js/runtime-main.74cac97d.js.map",
-    "static/css/2.1d8255a6.chunk.css": "/aps-test/static/css/2.1d8255a6.chunk.css",
-    "static/js/2.25a21ccd.chunk.js": "/aps-test/static/js/2.25a21ccd.chunk.js",
-    "static/js/2.25a21ccd.chunk.js.map": "/aps-test/static/js/2.25a21ccd.chunk.js.map",
-    "static/js/3.1286d3ec.chunk.js": "/aps-test/static/js/3.1286d3ec.chunk.js",
-    "static/js/3.1286d3ec.chunk.js.map": "/aps-test/static/js/3.1286d3ec.chunk.js.map",
-    "index.html": "/aps-test/index.html",
-    "static/css/2.1d8255a6.chunk.css.map": "/aps-test/static/css/2.1d8255a6.chunk.css.map",
-    "static/css/main.e2669ef5.chunk.css.map": "/aps-test/static/css/main.e2669ef5.chunk.css.map",
-    "static/js/2.25a21ccd.chunk.js.LICENSE.txt": "/aps-test/static/js/2.25a21ccd.chunk.js.LICENSE.txt",
-    "static/media/raleway.css": "/aps-test/static/media/Raleway-Thin.3ef5e3c7.ttf",
-    "static/media/about-me.89f6fd0c.jpg": "/aps-test/static/media/about-me.89f6fd0c.jpg"
+    "main.css": "/test-aps/static/css/main.e2669ef5.chunk.css",
+    "main.js": "/test-aps/static/js/main.ac69575c.chunk.js",
+    "main.js.map": "/test-aps/static/js/main.ac69575c.chunk.js.map",
+    "runtime-main.js": "/test-aps/static/js/runtime-main.fe051e0e.js",
+    "runtime-main.js.map": "/test-aps/static/js/runtime-main.fe051e0e.js.map",
+    "static/css/2.64ad785a.chunk.css": "/test-aps/static/css/2.64ad785a.chunk.css",
+    "static/js/2.00256524.chunk.js": "/test-aps/static/js/2.00256524.chunk.js",
+    "static/js/2.00256524.chunk.js.map": "/test-aps/static/js/2.00256524.chunk.js.map",
+    "static/js/3.1286d3ec.chunk.js": "/test-aps/static/js/3.1286d3ec.chunk.js",
+    "static/js/3.1286d3ec.chunk.js.map": "/test-aps/static/js/3.1286d3ec.chunk.js.map",
+    "index.html": "/test-aps/index.html",
+    "static/css/2.64ad785a.chunk.css.map": "/test-aps/static/css/2.64ad785a.chunk.css.map",
+    "static/css/main.e2669ef5.chunk.css.map": "/test-aps/static/css/main.e2669ef5.chunk.css.map",
+    "static/js/2.00256524.chunk.js.LICENSE.txt": "/test-aps/static/js/2.00256524.chunk.js.LICENSE.txt",
+    "static/media/raleway.css": "/test-aps/static/media/Raleway-Thin.3ef5e3c7.ttf",
+    "static/media/about-me.89f6fd0c.jpg": "/test-aps/static/media/about-me.89f6fd0c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.74cac97d.js",
-    "static/css/2.1d8255a6.chunk.css",
-    "static/js/2.25a21ccd.chunk.js",
+    "static/js/runtime-main.fe051e0e.js",
+    "static/css/2.64ad785a.chunk.css",
+    "static/js/2.00256524.chunk.js",
     "static/css/main.e2669ef5.chunk.css",
-    "static/js/main.5789d679.chunk.js"
+    "static/js/main.ac69575c.chunk.js"
   ]
 }
