@@ -1,7 +1,7 @@
 # Тестовое задание от APSolutions
 
 [Вакансия](https://dmitrov.hh.ru/vacancy/47853179 "Frontend-разработчик")  
-_[Ссылка на приложение](https://beagle-elgaeb.github.io/test-aps "Приложение")_
+_[Ссылка на приложение](https://beagle-elgaeb.github.io/test-apsolutions "Приложение")_
 
 <p>
   <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"><img src="readme/icon-js.svg" alt="JS"></a>
@@ -43,7 +43,7 @@ _[Пример](https://yadi.sk/d/-CJ_DVOZBd5UtA)_
 
 - проработан UX (`hover`'ы, подсветка некорректных данных в `input`'е);
 - используется css-in-js библиотека [styled-components](https://styled-components.com/ "Документация");
-- [страница размещена на GitHub Pages](https://beagle-elgaeb.github.io/test-aps "Выполненое тестовое задание");
+- [страница размещена на GitHub Pages](https://beagle-elgaeb.github.io/test-apsolutions "Выполненое тестовое задание");
 - страница адаптируется от 320px.
 
 ## Возможные улучшения
